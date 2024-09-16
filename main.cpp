@@ -5,12 +5,12 @@
 
 int main(int argc, char* argv[])
 {
-    practice-1::HelloName();
+    practice1::HelloName();
     std::string name;
     std::cin >> name;
     while(name != "End")
     {
-        practice-1::HelloName(name);
+        practice1::HelloName(name);
         std::cin >> name;
     }
     return 0;
