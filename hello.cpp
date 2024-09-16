@@ -1,7 +1,13 @@
-#include <iostream>
+//Uljana Alexejewa st129990@student.spbu.ru Practice-1
 
-int main(int argc, char** argv)
+#include <iostream>
+#include <hello.h>
+
+void practice1::HelloName(){
+    HelloName("world");
+}
+
+void practice1::HelloName(const std::string &name)
 {
-    std::cout << "Hello" << std::endl;
-    return 0;
+    std::cout << "Hello, " << name << "!" << std::endl;
 }
