@@ -5,10 +5,10 @@
 
 #include <string>
 
-namespace practice-1
+namespace practice1
 {
-    void SayHello();
-    void SayHello(const std::string &name);
+    void HelloName();
+    void HelloName(const std::string &name);
 }
 
 #endif /* HELLO_h */
