@@ -9,3 +9,8 @@ make
 # Run
 
 TBD
+
+# Makefile
+
+hello.cpp(file with function), main.cpp(executable file), hello.h(header file)
+
