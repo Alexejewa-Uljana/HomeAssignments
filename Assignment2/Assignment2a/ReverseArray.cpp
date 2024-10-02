@@ -2,12 +2,12 @@
 
 #include <iostream>
 
-void ReverseArray(int *pArray, int Array_size) // функция: принимающая указатель на первый элемент массива и его длину
+void ReverseArray(int *pArray, int Array_size)
 {
-    for(int i = 0; i < (Array_size + 1) / 2; i++) // проход до половины массива для замены всех пар
+    for(int i = 0; i < (Array_size + 1) / 2; i++)
     {
-        int t = *(pArray + i); // вспомогательная переманная для хранения значения  i-ого элемента массива
-        (pArray + i) = *(pArray + Array_size - i - 1); // изменение  i-ого элемента массива
-        (pArray + Array_size - i - 1) = t; // изменение (Array_size - i - 1)-ого элемента массива
+        int t = *(pArray + i); // swap for pointers
+        (pArray + i) = *(pArray + Array_size - i - 1);
+        (pArray + Array_size - i - 1) = t;
     }
 }
