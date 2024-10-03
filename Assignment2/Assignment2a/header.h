@@ -1,15 +1,14 @@
-//Uljana Alexejewa st129990@student.spbu.ru Practice-1
+//Uljana Alexejewa
 
-
-#pragma once
 
 #ifndef HEADER_H
 #define HEADER_H
 
 namespace Assignment2a
 {
-    char* file_to_array();
-    void ReverseArray();
+    std::pair<char*, int> file_to_array(const std::string& path);
+    void reverse_array(char* const buffer, const int size);
+    void array_to_file(char* const buffer, const int size);
 }
 
 

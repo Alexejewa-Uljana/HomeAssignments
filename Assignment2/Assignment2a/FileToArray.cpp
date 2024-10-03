@@ -4,22 +4,28 @@
 #include <fstream>
 #include <string>
 
-char* file_to_array(const path& file)
+std::pair<char*, int> file_to_array(const std::string& path)
 {
+    int size;
+    char *buffer;
     std::ifstream infile;
-    infile.open(file, std::ios::binary|std::ios::in); // open file
+    infile.open(path, std::ios::binary|std::ios::in); // open file
     if (!infile.is_open()) // check for file existence
     {
-        std::uintmax size = 1; // file does not exist
-        char *buffer = new char[size];
+        int size = 1; // file does not exist
+        buffer = new char[size];
         buffer[0] = 0;
     }
     else
     {
-        std::uintmax size = std::filesystem::file_size(file); // file exist
-        char *buffer = new [size]; // creat final array
-        infile.read((char *) &buffer, size); // read file in final array
+        infile.seekg(0, std::ios::end);
+        int size = infile.tellg();
+        buffer = new char[size]; // creat final array
+        infile.read(buffer, size); // read file in final array
     }
-    return buffer; // return final array
-    delete [] buffer; // clean memory
+    std::pair <char*, int> result;
+    result.first = buffer;
+    result.second = size;
+    return result; // return pointer on first element of array, size of array;
+   // delete [] buffer; clean memory
 }

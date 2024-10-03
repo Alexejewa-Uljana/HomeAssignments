@@ -1,13 +1,12 @@
-// Alexejewa Uljana st129990@student.spbu.ru
+// Alexejewa Uljana
 
 #include <iostream>
+#include <algorithm>
 
-void ReverseArray(int *pArray, int Array_size)
+void reverse_array(char* const buffer, const int size)
 {
-    for(int i = 0; i < (Array_size + 1) / 2; i++)
+    for(int i = 0; i < (size + 1) / 2; i++)
     {
-        int t = *(pArray + i); // swap for pointers
-        (pArray + i) = *(pArray + Array_size - i - 1);
-        (pArray + Array_size - i - 1) = t;
+        std::swap(buffer[i], buffer[size - i - 1]);
     }
 }
