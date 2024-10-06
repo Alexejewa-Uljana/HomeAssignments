@@ -1,4 +1,4 @@
-PROJECT=ASSIGNMENT-2AAA
+PROJECT=ASSIGNMENT-2AAAA
 
 IDIR=.
 CXX=g++
@@ -9,7 +9,7 @@ LDIR =../lib
 
 LIBS=-lm
 
-DEPS = hello.h
+DEPS = header.h
 
 
 OBJ = main.o FileToArray.o ReverseArray.o ArrayToFile.o
