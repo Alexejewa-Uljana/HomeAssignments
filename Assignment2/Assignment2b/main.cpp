@@ -2,11 +2,14 @@
 
 
 #include <iostream>
-#include <sstream>
+#include <string>
 #include <header.h>
 
 int main(int argc, char* argv [])
 {
-    int x = Assignment2b::ReversePolishNotation("2 3 +");
+    std::string s;
+    getline(std::cin, s);
+    int x = Assignment2b::rpn(s);
     std::cout << x;
+    return 0;
 }

@@ -12,7 +12,7 @@ LIBS=-lm
 DEPS = header.h
 
 
-OBJ = main.o ReversePolishNotation.o
+OBJ = main.o RPN.o
 
 .PHONY: default
 
@@ -33,3 +33,4 @@ clean:
 
 cleanall: clean
 	rm -f $(PROJECT)
+

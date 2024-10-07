@@ -5,10 +5,10 @@
 #include <string>
 #include <header.h>
 
-int ReversePolishNotation(const std::string input)
+int rpn(const std::string& input)
 {
-    int *stack = new int[100];
-    int *top_stack = stack;
+    int* stack = new int[100];
+    int* top_stack = stack;
     std::stringstream ss(input);
     std::string sss;
     while(ss >> sss)
