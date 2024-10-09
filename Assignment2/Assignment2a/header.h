@@ -1,4 +1,4 @@
-//Uljana Alexejewa
+//Uljana Alexejewa st129990@student.spbu.ru
 
 
 #ifndef HEADER_H

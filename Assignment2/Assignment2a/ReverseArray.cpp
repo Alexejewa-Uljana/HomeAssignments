@@ -1,4 +1,4 @@
-// Alexejewa Uljana
+// Alexejewa Uljana st129990@student.spbu.ru
 
 #include <iostream>
 #include <algorithm>

@@ -1,4 +1,4 @@
-// Alexejewa_Uljana
+// Alexejewa_Uljana st129990@student.spbu.ru
 
 #include <iostream>
 #include <header.h>
