@@ -6,7 +6,7 @@
 
 namespace Assignment2b
 {
-    int rpn(const std::string& input);
+    double rpn(const std::string& input);
 }
 
 #endif // HEADER_H
