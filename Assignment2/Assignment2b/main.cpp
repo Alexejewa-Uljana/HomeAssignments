@@ -9,7 +9,7 @@ int main(int argc, char* argv [])
 {
     std::string s;
     getline(std::cin, s);
-    int x = Assignment2b::rpn(s);
+    double x = Assignment2b::rpn(s);
     std::cout << x;
     return 0;
 }
