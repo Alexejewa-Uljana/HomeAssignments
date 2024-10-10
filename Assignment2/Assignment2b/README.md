@@ -6,7 +6,7 @@
 ## Contacts
 
 st129990@student.spbu.ru
-##Description
+## Description
 
 Home assignment 2b calculates reverse Polish rotation by the entered string. Result of programm - number of type of double.
 ## Build
