@@ -9,10 +9,11 @@ double Assignment2b::rpn(const std::string& input)
 {
     std::basic_string <char>::size_type size = input.length();
     double* stack = new double[size];
-    int current_size_stack = 0;
     double* top_stack = stack; // pointer on the top of stack
     std::stringstream s(input);
     std::string current;
+    s >> current; // read first number
+    *top_stack = std::stoi(current); // add first number in stack
     while(s >> current)
     {
         if(current == "+"){
@@ -35,15 +36,10 @@ double Assignment2b::rpn(const std::string& input)
             top_stack--;
             *top_stack = div;
         }
-        else if(current_size_stack != 0)
+        else
         {
             top_stack++;
             *top_stack = std::stoi(current);
-        }
-        else
-        {
-        *top_stack = std::stoi(current);
-        current_size_stack++;
         }
     }
     double answer = stack[0];
