@@ -12,4 +12,4 @@ Home assignment 2a reads a file into an array(by the given file name), reverse t
 make
 
 ## Run
-./ASSIGNMENT-2AAA
+./ASSIGNMENT-2A
