@@ -4,7 +4,7 @@
 #include <sstream>
 #include <string>
 #include "header.h"
-
+/* Мне кажется, что стек должен быть реализован отдельно. Тут как будто нарушается SRP */
 double Assignment2b::rpn(const std::string& input)
 {
     std::basic_string <char>::size_type size = input.length();
@@ -22,6 +22,7 @@ double Assignment2b::rpn(const std::string& input)
             *top_stack = sum;
         }
         else if(current == "-"){
+            /* Минус еще унарный бывает */
             double diff = *(top_stack - 1) - *top_stack;
             top_stack--;
             *top_stack = diff;
