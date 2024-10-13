@@ -6,7 +6,7 @@
 #include <header.h>
 #include <filesystem>
 
-
+/* Круто, что использовала так пару! */
 std::pair<char*, uintmax_t> Assignment2a::file_to_array(const std::string& path)
 {
     std::ifstream infile;
@@ -22,6 +22,9 @@ std::pair<char*, uintmax_t> Assignment2a::file_to_array(const std::string& path)
         return result;
     }
     uintmax_t size_of_file = std::filesystem::file_size(path) - 1; // size of file
+    /* Ты забыла его удалить. Чтобы такого не случалось следует научиться пользоваться умными указателями 
+     * или использовать здесь контейнер из стандартной библиотеки (например vector, у него есть метод data(), 
+     который вернет массив, который можно передать в read) */
     char* buffer = new char[size_of_file]; // creat final array
     infile.read(buffer, size_of_file); // read file in final array
     std::pair <char*, uintmax_t> result;
