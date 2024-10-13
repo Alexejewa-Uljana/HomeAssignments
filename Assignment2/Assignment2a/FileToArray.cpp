@@ -6,7 +6,7 @@
 #include <header.h>
 #include <filesystem>
 
-
+/* Круто, что использовала так пару! */
 std::pair<char*, uintmax_t> Assignment2a::file_to_array(const std::string& path)
 {
     std::ifstream infile;
