@@ -12,7 +12,7 @@ LIBS=-lm
 DEPS = header.h
 
 
-OBJ = main.o FileToArray.o ReverseArray.o ArrayToFile.o
+OBJ = main.o ReverseArray.o
 
 .PHONY: default
 
