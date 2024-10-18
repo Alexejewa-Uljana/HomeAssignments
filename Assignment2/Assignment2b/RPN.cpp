@@ -22,8 +22,16 @@ double Assignment2b::rpn(const std::string& input)
             *top_stack = sum;
         }
         else if(current == "-"){
-            double diff = *(top_stack - 1) - *top_stack;
-            top_stack--;
+            double diff;
+            if(top_stack == stack)
+            {
+                diff = - *(top_stack);
+            }
+            else
+            {
+                diff =  *(top_stack - 1) - *top_stack;
+                top_stack--;
+            }
             *top_stack = diff;
         }
         else if(current == "*"){
