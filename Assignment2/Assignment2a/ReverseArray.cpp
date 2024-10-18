@@ -4,9 +4,9 @@
 #include <algorithm>
 #include <header.h>
 
-void Assignment2a::reverse_array(char* const buffer, const uintmax_t size)
+void Assignment2a::reverse_array(char* const buffer, const std::size_t size)
 {
-    for(uintmax_t i = 0; i < (size + 1) / 2; i++)
+    for(std::size_t i = 0; i < (size + 1) / 2; i++)
     {
         std::swap(buffer[i], buffer[size - i - 1]);
     }
