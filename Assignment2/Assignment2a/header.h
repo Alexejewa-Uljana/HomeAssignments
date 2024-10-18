@@ -6,7 +6,7 @@
 
 namespace Assignment2a
 {
-    void reverse_array(char* const buffer, const uintmax_t size);
+    void reverse_array(char* const buffer, const std::size_t size);
 }
 
 
