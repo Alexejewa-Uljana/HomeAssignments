@@ -75,31 +75,41 @@ uint Transformer::getLevel() {
 
 
 bool Transformer::fire() {
-    if(_ammo > 0) _ammo--;
+    if(_ammo > 0) {
+        _ammo--;
+    }
     _gun -> attack();
     return true;
 }
 
 
 bool Transformer::move() {
-    if(_fuel > 0) _fuel--;
+    if(_fuel > 0) {
+        _fuel--;
+    }
     return true;
 }
 
 bool Transformer::turn(Degree degree) {
-    if(_ammo > (degree.getDegree() + 360 * degree.getPeriod())) _ammo -= (degree.getDegree() + 360 * degree.getPeriod());
+    if(_ammo > (degree.getDegree() + 360 * degree.getPeriod())) {
+        _ammo -= (degree.getDegree() + 360 * degree.getPeriod());
+    }
     return true;
 }
 
 
 bool Transformer::jump() {
-    if(_fuel > 0) _fuel--;
+    if(_fuel > 0) {
+        _fuel--;
+    }
     return true;
 }
 
 
 bool Transformer::ultimate() {
-    if(_fuel > 0) _fuel--;
+    if(_fuel > 0) {
+        _fuel--;
+    }
     return true;
 }
 
