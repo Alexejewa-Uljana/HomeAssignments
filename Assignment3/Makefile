@@ -9,10 +9,10 @@ LDIR =../lib
 
 LIBS=-lm
 
-DEPS = Transformer.h Gun.h
+DEPS = Transformer.h Gun.h Autobot.h Decepticon.h Shifter.h Degree.h
 
 
-OBJ = Transformer.o main.o Gun.o
+OBJ = Transformer.o main.o Gun.o Autobot.o Decepticon.o Shifter.o Degree.o
 
 .PHONY: default
 
