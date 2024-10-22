@@ -2,6 +2,8 @@
 
 #pragma once
 #include <iostream>
+#include "Gun.h"
+#include "Degree.h"
 #include "Transformer.h"
 
 
