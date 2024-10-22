@@ -3,15 +3,22 @@
 #include <iostream>
 #include "Gun.h"
 
-Gun::Gun(uint power, uint strength) {
+Gun::Gun() {
+    _power = 100;
+    _strength = 100;
+}
+
+void Gun::setPower(uint power) {
     _power = power;
-    _strength = strength;
 }
 
 uint Gun::getPower() {
     return _power;
 }
 
+void Gun::setStrength(uint strength) {
+    _strength = strength;
+}
 uint Gun::getStrength() {
     return _strength;
 }

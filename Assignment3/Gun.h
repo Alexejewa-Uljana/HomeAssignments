@@ -5,8 +5,10 @@
 
 class Gun{
 public:
-    Gun(uint power, uint strength);
+    Gun();
+    void setPower(uint power);
     uint getPower();
+    void setStrength(uint strength);
     uint getStrength();
     bool attack();
 private:
