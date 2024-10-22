@@ -35,7 +35,9 @@ bool Decepticon::evil_attack() {
 }
 
 bool Decepticon::act_of_kidness() {
-    if(_level_of_evil != 0) _level_of_evil--;
+    if(_level_of_evil != 0) {
+        _level_of_evil--;
+    }
     return true;
 }
 
