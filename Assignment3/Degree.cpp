@@ -9,7 +9,7 @@ Degree::Degree() {
 }
 
 void Degree::setDegree(uint degree) {
-   _degree = degree % 360;
+   _degree = (_degree + degree % 360) % 360;
    _period += degree / 360;
 }
 

@@ -24,7 +24,11 @@ uint Gun::getStrength() {
 }
 
 bool Gun::attack() {
-    if(_power > 0) _power--;
-    if(_strength > 0) _strength--;
+    if(_power > 0) {
+        _power--;
+    }
+    if(_strength > 0) {
+        _strength--;
+    }
     return true;
 }
