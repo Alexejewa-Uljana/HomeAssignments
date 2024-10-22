@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Transformer.h"
 #include "Gun.h"
+#include "Degree.h"
 
 
 Transformer::Transformer() {
@@ -11,7 +12,9 @@ Transformer::Transformer() {
     _range = 100;
     _strength = 100;
     _level = 1;
-    _gun = new Gun(_ammo + _fuel + _range + _strength + _level, _level);
+    _gun = new Gun();
+    _gun -> setPower(_ammo + _fuel + _range + _strength + _level);
+    _gun -> setStrength(_level);
 }
 
 Transformer::~Transformer() {
@@ -73,12 +76,18 @@ uint Transformer::getLevel() {
 
 bool Transformer::fire() {
     if(_ammo > 0) _ammo--;
+    _gun -> attack();
     return true;
 }
 
 
 bool Transformer::move() {
     if(_fuel > 0) _fuel--;
+    return true;
+}
+
+bool Transformer::turn(Degree degree) {
+    if(_ammo > (degree.getDegree() + 360 * degree.getPeriod())) _ammo -= (degree.getDegree() + 360 * degree.getPeriod());
     return true;
 }
 
