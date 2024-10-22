@@ -3,6 +3,7 @@
 #pragma once
 #include <iostream>
 #include "Gun.h"
+#include "Degree.h"
 
 class Transformer{
 public:
@@ -22,6 +23,7 @@ public:
     uint getLevel();
     bool move();
     bool jump();
+    bool turn(Degree degree);
     bool fire();
     bool ultimate();
     bool transform();
