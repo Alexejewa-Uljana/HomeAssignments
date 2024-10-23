@@ -3,6 +3,9 @@
 #pragma once
 #include <iostream>
 
+#ifndef GUN_H
+#define GUN_H
+
 class Gun{
 public:
     Gun();
@@ -15,3 +18,5 @@ private:
     uint _power;
     uint _strength;
 };
+
+#endif

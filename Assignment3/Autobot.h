@@ -6,6 +6,8 @@
 #include "Degree.h"
 #include "Transformer.h"
 
+#ifndef AUTOBOT_H
+#define AUTOBOT_H
 
 class Autobot: public Transformer {
 public:
@@ -24,3 +26,5 @@ private:
     uint _happiness_level;
     uint _level_of_greatness;
 };
+
+#endif

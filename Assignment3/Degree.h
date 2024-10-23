@@ -3,6 +3,9 @@
 #pragma once
 #include <iostream>
 
+#ifndef DEGREE_H
+#define DEGREE_H
+
 class Degree{
 public:
     Degree();
@@ -14,3 +17,5 @@ private:
     uint _degree;
     uint _period;
 };
+
+#endif

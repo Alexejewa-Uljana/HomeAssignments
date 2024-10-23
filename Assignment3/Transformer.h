@@ -1,6 +1,10 @@
 // Алексеева Ульяна st129990@student.spbu.ry
 
 #pragma once
+
+#ifndef TRANSORMER_H
+#define TRANSFORMER_H
+
 #include <iostream>
 #include "Gun.h"
 #include "Degree.h"
@@ -35,3 +39,5 @@ private:
     uint _ammo;
     Gun* _gun;
 };
+
+#endif

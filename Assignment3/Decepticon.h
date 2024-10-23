@@ -1,10 +1,13 @@
 // Алексеева Ульяна st129990@student.spbu.ru
 
+#pragma once
 #include <iostream>
 #include "Gun.h"
 #include "Degree.h"
 #include "Transformer.h"
 
+#ifndef DECEPTICON_H
+#define DECEPTICON_H
 
 class Decepticon: public Transformer
 {
@@ -21,3 +24,5 @@ private:
     uint _level_of_evil;
     uint _level_of_deception;
 };
+
+#endif
