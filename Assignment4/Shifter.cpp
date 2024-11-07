@@ -12,6 +12,11 @@ Shifter::Shifter() {
     _weight = 100;
 }
 
+Shifter::Shifter(uint size, uint weight) {
+    _size = size;
+    _weight = weight;
+}
+
 void Shifter::setSize(uint size) {
     _size = size;
 }

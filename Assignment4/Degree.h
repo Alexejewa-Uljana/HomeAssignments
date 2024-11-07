@@ -9,6 +9,7 @@
 class Degree{
 public:
     Degree();
+    Degree(uint degree, uint period);
     void setDegree(uint degree);
     uint getDegree();
     void setPeriod(uint period);

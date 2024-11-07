@@ -12,6 +12,7 @@
 class Autobot: public Transformer {
 public:
     Autobot();
+    Autobot(uint level_of_kidness, uint happiness_level, uint level_of_greatness);
     void setLevel_of_kidness(uint level_of_kidness);
     uint getLevel_of_kidness();
     void setHappiness_level(uint happiness_level);

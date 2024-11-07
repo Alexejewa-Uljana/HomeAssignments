@@ -12,6 +12,7 @@
 class Shifter: public Transformer {
 public:
     Shifter();
+    Shifter(uint size, uint weight);
     bool transform();
     void setSize(uint size);
     uint getSize();

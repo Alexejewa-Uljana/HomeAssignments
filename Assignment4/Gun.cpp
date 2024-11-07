@@ -8,6 +8,11 @@ Gun::Gun() {
     _strength = 100;
 }
 
+Gun::Gun(uint power, uint strength) {
+    _power = power;
+    _strength = strength;
+}
+
 void Gun::setPower(uint power) {
     _power = power;
 }

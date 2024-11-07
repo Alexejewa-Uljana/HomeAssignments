@@ -9,6 +9,7 @@
 class Gun{
 public:
     Gun();
+    Gun(uint power, uint strength);
     void setPower(uint power);
     uint getPower();
     void setStrength(uint strength);

@@ -13,6 +13,7 @@ class Decepticon: public Transformer
 {
 public:
     Decepticon();
+    Decepticon(uint level_of_evil, uint level_of_deception);
     void setLevel_of_evil(uint level_of_evil);
     uint getLevel_of_evil();
     void setLevel_of_deception(uint level_of_deception);

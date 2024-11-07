@@ -12,6 +12,11 @@ Decepticon::Decepticon() {
     _level_of_deception = 100;
 }
 
+Decepticon::Decepticon(uint level_of_evil, uint level_of_deception) {
+    _level_of_evil = level_of_evil;
+    _level_of_deception = level_of_deception;
+}
+
 void Decepticon::setLevel_of_evil(uint level_of_evil) {
     _level_of_evil = level_of_evil;
 }

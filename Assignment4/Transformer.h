@@ -12,6 +12,7 @@
 class Transformer{
 public:
     Transformer();
+    Transformer(uint level, uint strength, uint range, uint fuel, uint ammo, Gun* gun);
     ~Transformer();
     uint getGun_power();
     uint getGun_strength();

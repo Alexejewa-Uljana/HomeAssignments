@@ -17,6 +17,17 @@ Transformer::Transformer() {
     _gun -> setStrength(_level);
 }
 
+Transformer::Transformer(uint level, uint strength, uint range, uint fuel, uint ammo, Gun* gun) {
+    _ammo = ammo;
+    _fuel = fuel;
+    _range = range;
+    _strength = strength;
+    _level = level;
+    _gun = new Gun();
+    _gun -> setPower(gun->getPower());
+    _gun -> setStrength(gun->getStrength());
+}
+
 Transformer::~Transformer() {
     delete _gun;
 }

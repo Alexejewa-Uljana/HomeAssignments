@@ -13,6 +13,12 @@ Autobot::Autobot() {
     _level_of_greatness = 100;
 }
 
+Autobot::Autobot(uint level_of_kidness, uint happiness_level, uint level_of_greatness) {
+    _level_of_kidness = level_of_kidness;
+    _happiness_level = happiness_level;
+    _level_of_greatness = level_of_greatness;
+}
+
 void Autobot::setLevel_of_kidness(uint level_of_kidness) {
     _level_of_kidness = level_of_kidness;
 }
