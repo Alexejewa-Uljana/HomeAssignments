@@ -37,3 +37,11 @@ std::ostream & operator<<(std::ostream & os, Gun& gun) {
     os << "Power of gun = " << gun.getPower() << ", " << "strength of gun = " << gun.getStrength() << std::endl << std::endl;
     return os;
 }
+
+bool Gun::operator<(Gun& other) {
+    return this->_power < other._power;
+}
+
+bool Gun::operator>(Gun& other) {
+    return this->_power > other._power;
+}

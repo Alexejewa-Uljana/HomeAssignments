@@ -20,6 +20,8 @@ public:
     bool transform_size();
     bool transform_weight();
     friend std::ostream & operator<<(std::ostream & os, Shifter& shifter);
+    bool operator<(Shifter& other);
+    bool operator>(Shifter& other);
 private:
     uint _size;
     uint _weight;

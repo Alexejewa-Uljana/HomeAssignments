@@ -42,3 +42,11 @@ std::ostream & operator<<(std::ostream & os, Shifter& shifter) {
     os << "Level: " << shifter.getLevel() << std::endl << "Strength: " << shifter.getStrength() << std::endl << "Range: " << shifter.getRange() << std::endl << "Fuel: " << shifter.getFuel() << std::endl << "Ammo: " << shifter.getAmmo() << std::endl << "Gun: " << shifter.getGun_power() << " " << shifter.getGun_strength() << std::endl << "Size: " << shifter.getSize() << std::endl << "Weight: " << shifter.getWeight() << std::endl << std::endl;
     return os;
 }
+
+bool Shifter::operator<(Shifter& other) {
+    return this->_size < other._size;
+}
+
+bool Shifter::operator>(Shifter& other) {
+    return this->_size > other._size;
+}

@@ -15,6 +15,8 @@ public:
     uint getStrength();
     bool attack();
     friend std::ostream & operator<<(std::ostream &os, Gun& gun);
+    bool operator<(Gun& other);
+    bool operator>(Gun& other);
 private:
     uint _power;
     uint _strength;

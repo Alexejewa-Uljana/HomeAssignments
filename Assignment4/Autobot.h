@@ -22,6 +22,8 @@ public:
     bool attack_against_evil();
     bool attack_against_decepticon();
     friend std::ostream & operator<<(std::ostream & os, Autobot& autobot);
+    bool operator<(Autobot& other);
+    bool operator>(Autobot& other);
 private:
     uint _level_of_kidness;
     uint _happiness_level;

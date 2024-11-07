@@ -52,3 +52,11 @@ std::ostream & operator<<(std::ostream & os, Autobot& autobot) {
     os << "Level: " << autobot.getLevel() << std::endl << "Strength: " << autobot.getStrength() << std::endl << "Range: " << autobot.getRange() << std::endl << "Fuel: " << autobot.getFuel() << std::endl << "Ammo: " << autobot.getAmmo() << std::endl << "Gun: " << autobot.getGun_power() << " " << autobot.getGun_strength() << std::endl << "Level of kidness: " << autobot.getLevel_of_kidness() << std::endl << "Happiness level: " << autobot.getHappiness_level() << std::endl << "Level of greatness: " << autobot.getLevel_of_greatness() << std::endl << std::endl;
     return os;
 }
+
+bool Autobot::operator<(Autobot& other) {
+    return this->_happiness_level < other._happiness_level;
+}
+
+bool Autobot::operator>(Autobot& other) {
+    return this->_happiness_level > other._happiness_level;
+}

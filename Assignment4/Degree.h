@@ -14,6 +14,8 @@ public:
     void setPeriod(uint period);
     uint getPeriod();
     friend std::ostream & operator<<(std::ostream & os, Degree & degree);
+    bool operator<(Degree& other);
+    bool operator>(Degree& other);
 private:
     uint _degree;
     uint _period;

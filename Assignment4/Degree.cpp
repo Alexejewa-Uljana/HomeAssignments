@@ -29,3 +29,11 @@ std::ostream & operator<<(std::ostream & os, Degree & degree) {
     os << "Degree = " << degree.getDegree() + 360 * degree.getPeriod() << std::endl << std::endl;
     return os;
 }
+
+bool Degree::operator<(Degree& other) {
+    return this->_degree < other._degree;
+}
+
+bool Degree::operator>(Degree& other) {
+    return this->_degree > other._degree;
+}

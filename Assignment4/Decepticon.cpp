@@ -45,3 +45,11 @@ std::ostream & operator<<(std::ostream & os, Decepticon& decepticon) {
      os << "Level: " << decepticon.getLevel() << std::endl << "Strength: " << decepticon.getStrength() << std::endl << "Range: " << decepticon.getRange() << std::endl << "Fuel: " << decepticon.getFuel() << std::endl << "Ammo: " << decepticon.getAmmo() << std::endl << "Gun: " << decepticon.getGun_power() << " " << decepticon.getGun_strength() << std::endl << "Level of evil: " << decepticon.getLevel_of_evil() << std::endl << "Level of deception: " << decepticon.getLevel_of_deception() << std::endl << std::endl;
      return os;
 }
+
+bool Decepticon::operator<(Decepticon& other) {
+    return this->_level_of_evil < other._level_of_evil;
+}
+
+bool Decepticon::operator>(Decepticon& other) {
+    return this->_level_of_evil > other._level_of_evil;
+}

@@ -21,6 +21,8 @@ public:
     bool evil_attack();
     bool act_of_kidness();
     friend std::ostream & operator<<(std::ostream & os, Decepticon& decepticon);
+    bool operator<(Decepticon& other);
+    bool operator>(Decepticon& other);
 private:
     uint _level_of_evil;
     uint _level_of_deception;
