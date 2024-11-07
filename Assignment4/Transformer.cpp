@@ -125,3 +125,11 @@ std::ostream & operator<<(std::ostream & os, Transformer& transformer) {
     os << "Level: " << transformer.getLevel() << std::endl << "Strength: " << transformer.getStrength() << std::endl << "Range: " << transformer.getRange() << std::endl << "Fuel: " << transformer.getFuel() << std::endl << "Ammo: " << transformer.getAmmo() << std::endl << "Gun: " << transformer.getGun_power() << " " << transformer.getGun_strength() << std::endl << std::endl;
     return os;
 }
+
+bool Transformer::operator<(Transformer& other) {
+    return this->_level < other._level;
+}
+
+bool Transformer::operator>(Transformer& other) {
+    return this->_level > other._level;
+}

@@ -32,6 +32,8 @@ public:
     bool ultimate();
     bool transform();
     friend std::ostream & operator<<(std::ostream &os, Transformer& transformer);
+    bool operator<(Transformer& other);
+    bool operator>(Transformer& other);
 private:
     uint _level;
     uint _strength;
