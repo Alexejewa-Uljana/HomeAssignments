@@ -6,7 +6,8 @@
 #include "Degree.h"
 
 
-Transformer::Transformer() {
+Transformer::Transformer()
+{
     _ammo = 100;
     _fuel = 100;
     _range = 100;
@@ -17,7 +18,8 @@ Transformer::Transformer() {
     _gun -> setStrength(_level);
 }
 
-Transformer::Transformer(uint level, uint strength, uint range, uint fuel, uint ammo, Gun* gun) {
+Transformer::Transformer(uint level, uint strength, uint range, uint fuel, uint ammo, Gun* gun)
+{
     _ammo = ammo;
     _fuel = fuel;
     _range = range;
@@ -28,65 +30,80 @@ Transformer::Transformer(uint level, uint strength, uint range, uint fuel, uint 
     _gun -> setStrength(gun->getStrength());
 }
 
-Transformer::~Transformer() {
+Transformer::~Transformer()
+{
     delete _gun;
 }
 
-uint Transformer::getGun_power() {
+uint Transformer::getGun_power()
+{
     return _gun -> getPower();
 }
 
-uint Transformer::getGun_strength() {
+uint Transformer::getGun_strength()
+{
     return _gun -> getStrength();
 }
 
-void Transformer::setAmmo(uint ammo) {
+void Transformer::setAmmo(uint ammo)
+{
     _ammo = ammo;
 }
 
-uint Transformer::getAmmo() {
+uint Transformer::getAmmo()
+{
     return _ammo;
 }
 
 
-void Transformer::setFuel(uint fuel) {
+void Transformer::setFuel(uint fuel)
+{
     _fuel = fuel;
 }
 
-uint Transformer::getFuel() {
+uint Transformer::getFuel()
+{
     return _fuel;
 }
 
 
-void Transformer::setRange(uint range) {
+void Transformer::setRange(uint range)
+{
     _range = range;
 }
 
-uint Transformer::getRange() {
+uint Transformer::getRange()
+{
     return _range;
 }
 
 
-void Transformer::setStrength(uint strength) {
+void Transformer::setStrength(uint strength)
+{
     _strength = strength;
 }
 
-uint Transformer::getStrength() {
+uint Transformer::getStrength()
+{
     return _strength;
 }
 
 
-void Transformer::setLevel(uint level) {
+void Transformer::setLevel(uint level)
+{
     _level = level;
 }
 
-uint Transformer::getLevel() {
+uint Transformer::getLevel()
+{
     return _level;
 }
 
 
-bool Transformer::fire() {
-    if(_ammo > 0) {
+bool Transformer::fire()
+{
+    if(_ammo > 0)
+    {
         _ammo--;
     }
     _gun -> attack();
@@ -94,53 +111,65 @@ bool Transformer::fire() {
 }
 
 
-bool Transformer::move() {
-    if(_fuel > 0) {
+bool Transformer::move()
+{
+    if(_fuel > 0)
+    {
         _fuel--;
     }
     return true;
 }
 
-bool Transformer::turn(Degree degree) {
-    if(_ammo > (degree.getDegree() + 360 * degree.getPeriod())) {
+bool Transformer::turn(Degree degree)
+{
+    if(_ammo > (degree.getDegree() + 360 * degree.getPeriod()))
+    {
         _ammo -= (degree.getDegree() + 360 * degree.getPeriod());
     }
     return true;
 }
 
 
-bool Transformer::jump() {
-    if(_fuel > 0) {
+bool Transformer::jump()
+{
+    if(_fuel > 0)
+    {
         _fuel--;
     }
     return true;
 }
 
 
-bool Transformer::ultimate() {
-    if(_fuel > 0) {
+bool Transformer::ultimate()
+{
+    if(_fuel > 0)
+    {
         _fuel--;
     }
     return true;
 }
 
 
-bool Transformer::transform() {
+bool Transformer::transform()
+{
     _strength++;
     _level++;
     _range++;
     return true;
 }
 
-std::ostream & operator<<(std::ostream & os, Transformer& transformer) {
+std::ostream & operator<<(std::ostream & os, Transformer& transformer)
+{
     os << "Level: " << transformer.getLevel() << "; " << "Strength: " << transformer.getStrength() << "; " << "Range: " << transformer.getRange() << "; " << "Fuel: " << transformer.getFuel() << "; " << "Ammo: " << transformer.getAmmo() << "; " << "Gun: " << transformer.getGun_power() << " " << transformer.getGun_strength();
     return os;
 }
 
-bool Transformer::operator<(Transformer& other) {
+bool Transformer::operator<(Transformer& other)
+{
     return this->_level < other._level;
 }
 
-bool Transformer::operator>(Transformer& other) {
+bool Transformer::operator>(Transformer& other)
+{
     return this->_level > other._level;
 }

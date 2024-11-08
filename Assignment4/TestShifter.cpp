@@ -8,14 +8,16 @@
 #include "Autobot.h"
 #include "Decepticon.h"
 
-TEST(Shifter, constructor) {
+TEST(Shifter, constructor)
+{
     Shifter shifter(200, 200);
     bool fl = (200 == shifter.getSize());
     fl = fl & (200 == shifter.getWeight());
     EXPECT_EQ(1, fl);
 }
 
-TEST(Shifter, LessThanOperator) {
+TEST(Shifter, LessThanOperator)
+{
     Shifter shifter1;
     Shifter shifter2;
     shifter2.setSize(500);
@@ -25,7 +27,8 @@ TEST(Shifter, LessThanOperator) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Shifter, GreaterThanOperator) {
+TEST(Shifter, GreaterThanOperator)
+{
     Shifter shifter1;
     Shifter shifter2;
     shifter2.setSize(500);
@@ -35,7 +38,8 @@ TEST(Shifter, GreaterThanOperator) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Shifter, OutputStreamOperator) {
+TEST(Shifter, OutputStreamOperator)
+{
     Shifter shifter;
     std::ostringstream oss;
     oss << shifter;
@@ -44,41 +48,48 @@ TEST(Shifter, OutputStreamOperator) {
 }
 
 
-TEST(Shifter, getSize) {
+TEST(Shifter, getSize)
+{
     Shifter shifter;
     EXPECT_EQ(100, shifter.getSize());
 }
 
-TEST(Shifter, setSize) {
+TEST(Shifter, setSize)
+{
     Shifter shifter;
     shifter.setSize(1000);
     EXPECT_EQ(1000, shifter.getSize());
 }
 
-TEST(Shifter, getWeight) {
+TEST(Shifter, getWeight)
+{
     Shifter shifter;
     EXPECT_EQ(100, shifter.getWeight());
 }
 
-TEST(Shifter, setWeight) {
+TEST(Shifter, setWeight)
+{
     Shifter shifter;
     shifter.setWeight(1000);
     EXPECT_EQ(1000, shifter.getWeight());
 }
 
-TEST(Shifter, transform_size) {
+TEST(Shifter, transform_size)
+{
     Shifter shifter;
     shifter.transform_size();
     EXPECT_EQ(101, shifter.getSize());
 }
 
-TEST(Shifter, transform_weight) {
+TEST(Shifter, transform_weight)
+{
     Shifter shifter;
     shifter.transform_weight();
     EXPECT_EQ(101, shifter.getWeight());
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

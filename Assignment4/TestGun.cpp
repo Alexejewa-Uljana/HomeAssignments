@@ -3,14 +3,16 @@
 #include "gtest/gtest.h"
 #include "Gun.h"
 
-TEST(Gun, constructor) {
+TEST(Gun, constructor)
+{
     Gun gun(500, 500);
     bool fl = (500 == gun.getPower());
     fl = fl & (500 == gun.getStrength());
     EXPECT_EQ(1, fl);
 }
 
-TEST(Gun, LessThanOperator) {
+TEST(Gun, LessThanOperator)
+{
     Gun gun1;
     Gun gun2;
     gun2.setPower(500);
@@ -20,7 +22,8 @@ TEST(Gun, LessThanOperator) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Gun, LassGreaterOperator) {
+TEST(Gun, LassGreaterOperator)
+{
     Gun gun1;
     Gun gun2;
     gun2.setPower(500);
@@ -31,7 +34,8 @@ TEST(Gun, LassGreaterOperator) {
 }
 
 
-TEST(Gun, OutputStreamOperator) {
+TEST(Gun, OutputStreamOperator)
+{
     Gun gun;
     std::ostringstream oss;
     oss << gun;
@@ -40,29 +44,34 @@ TEST(Gun, OutputStreamOperator) {
 }
 
 
-TEST(Gun, getPower) {
+TEST(Gun, getPower)
+{
     Gun gun;
     EXPECT_EQ(100, gun.getPower());
 }
 
-TEST(Gun, setPower) {
+TEST(Gun, setPower)
+{
     Gun gun;
     gun.setPower(1000);
     EXPECT_EQ(1000, gun.getPower());
 }
 
-TEST(Gun, getStrength) {
+TEST(Gun, getStrength)
+{
     Gun gun;
     EXPECT_EQ(100, gun.getStrength());
 }
 
-TEST(Gun, setStrength) {
+TEST(Gun, setStrength)
+{
     Gun gun;
     gun.setStrength(1000);
     EXPECT_EQ(1000, gun.getStrength());
 }
 
-TEST(Gun, attack) {
+TEST(Gun, attack)
+{
     Gun gun;
     gun.setPower(2);
     gun.setStrength(2);

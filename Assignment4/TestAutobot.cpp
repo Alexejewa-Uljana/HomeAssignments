@@ -6,7 +6,8 @@
 #include "Degree.h"
 #include "Autobot.h"
 
-TEST(Autobot, constructor) {
+TEST(Autobot, constructor)
+{
     Autobot autobot(200, 200, 200);
     bool fl = (200 == autobot.getLevel_of_kidness());
     fl = fl & (200 == autobot.getHappiness_level());
@@ -14,7 +15,8 @@ TEST(Autobot, constructor) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Autobot, LessThanOperator) {
+TEST(Autobot, LessThanOperator)
+{
     Autobot autobot1;
     Autobot autobot2;
     autobot2.setHappiness_level(500);
@@ -24,7 +26,8 @@ TEST(Autobot, LessThanOperator) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Autobot, GreaterThanOperator) {
+TEST(Autobot, GreaterThanOperator)
+{
     Autobot autobot1;
     Autobot autobot2;
     autobot2.setHappiness_level(500);
@@ -34,7 +37,8 @@ TEST(Autobot, GreaterThanOperator) {
     EXPECT_EQ(1, fl);
 }
 
-TEST(Autbot, OutputStreamOperator) {
+TEST(Autbot, OutputStreamOperator)
+{
     Autobot autobot;
     std::ostringstream oss;
     oss << autobot;
@@ -45,47 +49,55 @@ TEST(Autbot, OutputStreamOperator) {
 
 
 
-TEST(Autobot, getLevel_of_kidness) {
+TEST(Autobot, getLevel_of_kidness)
+{
     Autobot autobot;
     EXPECT_EQ(100, autobot.getLevel_of_kidness());
 }
 
-TEST(Autobot, setLevel_of_kidness) {
+TEST(Autobot, setLevel_of_kidness)
+{
     Autobot autobot;
     autobot.setLevel_of_kidness(1000);
     EXPECT_EQ(1000, autobot.getLevel_of_kidness());
 }
 
-TEST(Autobot, getHappiness_level) {
+TEST(Autobot, getHappiness_level)
+{
     Autobot autobot;
     EXPECT_EQ(100, autobot.getHappiness_level());
 }
 
-TEST(Autobot, setHappiness_level) {
+TEST(Autobot, setHappiness_level)
+{
     Autobot autobot;
     autobot.setHappiness_level(1000);
     EXPECT_EQ(1000, autobot.getHappiness_level());
 }
 
-TEST(Autobot, getLevel_of_greatness) {
+TEST(Autobot, getLevel_of_greatness)
+{
     Autobot autobot;
     EXPECT_EQ(100, autobot.getLevel_of_greatness());
 }
 
-TEST(Autobot, setLevel_of_greatness) {
+TEST(Autobot, setLevel_of_greatness)
+{
     Autobot autobot;
     autobot.setLevel_of_greatness(1000);
     EXPECT_EQ(1000, autobot.getLevel_of_greatness());
 }
 
-TEST(Autobot, attack_against_evil) {
+TEST(Autobot, attack_against_evil)
+{
     Autobot autobot;
     autobot.attack_against_evil();
     bool fl_attack_against_evil = (autobot.getLevel_of_greatness() == 101) and (autobot.getHappiness_level() == 101);
     EXPECT_EQ(true, fl_attack_against_evil);
 }
 
-TEST(Autobot, attack_against_decepticon) {
+TEST(Autobot, attack_against_decepticon)
+{
     Autobot autobot;
     autobot.attack_against_decepticon();
     EXPECT_EQ(true, autobot.getLevel_of_greatness() == 101);
