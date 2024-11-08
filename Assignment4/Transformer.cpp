@@ -133,7 +133,7 @@ bool Transformer::transform() {
 }
 
 std::ostream & operator<<(std::ostream & os, Transformer& transformer) {
-    os << "Level: " << transformer.getLevel() << std::endl << "Strength: " << transformer.getStrength() << std::endl << "Range: " << transformer.getRange() << std::endl << "Fuel: " << transformer.getFuel() << std::endl << "Ammo: " << transformer.getAmmo() << std::endl << "Gun: " << transformer.getGun_power() << " " << transformer.getGun_strength() << std::endl << std::endl;
+    os << "Level: " << transformer.getLevel() << "; " << "Strength: " << transformer.getStrength() << "; " << "Range: " << transformer.getRange() << "; " << "Fuel: " << transformer.getFuel() << "; " << "Ammo: " << transformer.getAmmo() << "; " << "Gun: " << transformer.getGun_power() << " " << transformer.getGun_strength();
     return os;
 }
 

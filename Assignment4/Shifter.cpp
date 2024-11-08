@@ -44,7 +44,7 @@ bool Shifter::transform_weight() {
 }
 
 std::ostream & operator<<(std::ostream & os, Shifter& shifter) {
-    os << "Level: " << shifter.getLevel() << std::endl << "Strength: " << shifter.getStrength() << std::endl << "Range: " << shifter.getRange() << std::endl << "Fuel: " << shifter.getFuel() << std::endl << "Ammo: " << shifter.getAmmo() << std::endl << "Gun: " << shifter.getGun_power() << " " << shifter.getGun_strength() << std::endl << "Size: " << shifter.getSize() << std::endl << "Weight: " << shifter.getWeight() << std::endl << std::endl;
+    os << "Level: " << shifter.getLevel() << "; " << "Strength: " << shifter.getStrength() << "; " << "Range: " << shifter.getRange() << "; " << "Fuel: " << shifter.getFuel() << "; " << "Ammo: " << shifter.getAmmo() << "; " << "Gun: " << shifter.getGun_power() << " " << shifter.getGun_strength() << "; " << "Size: " << shifter.getSize() << "; " << "Weight: " << shifter.getWeight();
     return os;
 }
 

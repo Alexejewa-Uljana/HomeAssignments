@@ -47,7 +47,7 @@ bool Decepticon::act_of_kidness() {
 }
 
 std::ostream & operator<<(std::ostream & os, Decepticon& decepticon) {
-     os << "Level: " << decepticon.getLevel() << std::endl << "Strength: " << decepticon.getStrength() << std::endl << "Range: " << decepticon.getRange() << std::endl << "Fuel: " << decepticon.getFuel() << std::endl << "Ammo: " << decepticon.getAmmo() << std::endl << "Gun: " << decepticon.getGun_power() << " " << decepticon.getGun_strength() << std::endl << "Level of evil: " << decepticon.getLevel_of_evil() << std::endl << "Level of deception: " << decepticon.getLevel_of_deception() << std::endl << std::endl;
+     os << "Level: " << decepticon.getLevel() << "; " << "Strength: " << decepticon.getStrength() << "; " << "Range: " << decepticon.getRange() << "; " << "Fuel: " << decepticon.getFuel() << "; " << "Ammo: " << decepticon.getAmmo() << "; " << "Gun: " << decepticon.getGun_power() << " " << decepticon.getGun_strength() << "; " << "Level of evil: " << decepticon.getLevel_of_evil() << "; " << "Level of deception: " << decepticon.getLevel_of_deception();
      return os;
 }
 

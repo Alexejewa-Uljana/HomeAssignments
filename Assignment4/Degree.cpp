@@ -31,7 +31,7 @@ uint Degree::getPeriod() {
 }
 
 std::ostream & operator<<(std::ostream & os, Degree & degree) {
-    os << "Degree = " << degree.getDegree() + 360 * degree.getPeriod() << std::endl << std::endl;
+    os << "Degree = " << degree.getDegree() + 360 * degree.getPeriod();
     return os;
 }
 
