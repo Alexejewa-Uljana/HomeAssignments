@@ -9,7 +9,8 @@
 #include "Gun.h"
 #include "Degree.h"
 
-class Transformer{
+class Transformer
+{
 public:
     Transformer();
     Transformer(uint level, uint strength, uint range, uint fuel, uint ammo, Gun* gun);

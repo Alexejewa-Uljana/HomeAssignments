@@ -6,7 +6,8 @@
 #ifndef DEGREE_H
 #define DEGREE_H
 
-class Degree{
+class Degree
+{
 public:
     Degree();
     Degree(uint degree, uint period);

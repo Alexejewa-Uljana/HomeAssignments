@@ -9,7 +9,8 @@
 #ifndef AUTOBOT_H
 #define AUTOBOT_H
 
-class Autobot: public Transformer {
+class Autobot: public Transformer
+{
 public:
     Autobot();
     Autobot(uint level_of_kidness, uint happiness_level, uint level_of_greatness);

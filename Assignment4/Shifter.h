@@ -9,7 +9,8 @@
 #ifndef SHIFTER_H
 #define SHIFTER_H
 
-class Shifter: public Transformer {
+class Shifter: public Transformer
+{
 public:
     Shifter();
     Shifter(uint size, uint weight);

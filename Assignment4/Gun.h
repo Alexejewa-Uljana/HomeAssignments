@@ -6,7 +6,8 @@
 #ifndef GUN_H
 #define GUN_H
 
-class Gun{
+class Gun
+{
 public:
     Gun();
     Gun(uint power, uint strength);
