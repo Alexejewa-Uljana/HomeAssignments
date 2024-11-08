@@ -6,7 +6,7 @@
 st129990@student.spbu.ru
 ## Description
 
-Home assignment3 contains class Gun, class Degree, class Transformer, class Autobot, class Decepticon, class Shifter.
+Home assignment4 contains class Gun, class Degree, class Transformer, class Autobot, class Decepticon, class Shifter.
 
 ## Build
 
