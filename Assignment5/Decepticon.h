@@ -18,7 +18,9 @@ public:
     uint getLevel_of_evil();
     void setLevel_of_deception(uint level_of_deception);
     uint getLevel_of_deception();
-    bool transform();
+    void transform() override;
+    void ulta() override;
+    void openFire() override;
     bool evil_attack();
     bool act_of_kidness();
     friend std::ostream & operator<<(std::ostream & os, Decepticon& decepticon);

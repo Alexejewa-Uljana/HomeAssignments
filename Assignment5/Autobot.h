@@ -20,7 +20,9 @@ public:
     uint getHappiness_level();
     void setLevel_of_greatness(uint level_of_greatness);
     uint getLevel_of_greatness();
-    bool transform();
+    void transform() override;
+    void ulta() override;
+    void openFire() override;
     bool attack_against_evil();
     bool attack_against_decepticon();
     friend std::ostream & operator<<(std::ostream & os, Autobot& autobot);
