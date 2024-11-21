@@ -149,13 +149,19 @@ bool Transformer::ultimate()
     return true;
 }
 
-
-bool Transformer::transform()
+void Transformer::transform()
 {
-    _strength++;
-    _level++;
-    _range++;
-    return true;
+    std::cout << "Class: Transformer" << std::endl << "Method: transform" << std::endl << std::endl;
+}
+
+void Transformer::ulta()
+{
+    std::cout << "Class: Transformer" << std::endl << "Method: ulta" << std::endl << std::endl;
+}
+
+void Transformer::openFire()
+{
+    std::cout << "Class: Transformer" << std::endl << "Method: openFire" << std::endl << std::endl;
 }
 
 std::ostream & operator<<(std::ostream & os, Transformer& transformer)

@@ -51,6 +51,23 @@ bool Shifter::transform_weight()
     return true;
 }
 
+void Shifter::transform()
+{
+    std::cout << "Class: Shifter" << std::endl << "Method: transform" << std::endl << std::endl;
+}
+
+void Shifter::ulta()
+{
+    std::cout << "Class: Shifter" << std::endl << "Method: ulta" << std::endl << std::endl;
+}
+
+void Shifter::openFire()
+{
+    std::cout << "Class: Shifter" << std::endl << "Method: openFire" << std::endl << std::endl;
+}
+
+
+
 std::ostream & operator<<(std::ostream & os, Shifter& shifter)
 {
     os << "Level: " << shifter.getLevel() << "; " << "Strength: " << shifter.getStrength() << "; " << "Range: " << shifter.getRange() << "; " << "Fuel: " << shifter.getFuel() << "; " << "Ammo: " << shifter.getAmmo() << "; " << "Gun: " << shifter.getGun_power() << " " << shifter.getGun_strength() << "; " << "Size: " << shifter.getSize() << "; " << "Weight: " << shifter.getWeight();

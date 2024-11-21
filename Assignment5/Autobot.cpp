@@ -64,6 +64,21 @@ bool Autobot::attack_against_decepticon()
     return true;
 }
 
+void Autobot::transform()
+{
+    std::cout << "Class: Autobot" << std::endl << "Method: transform" << std::endl << std::endl;
+}
+
+void Autobot::ulta()
+{
+    std::cout << "Class: Autobot" << std::endl << "Method: ulta" << std::endl << std::endl;
+}
+
+void Autobot::openFire()
+{
+    std::cout << "Class Autobot" << std::endl << "Method: openFire" << std::endl << std::endl;
+}
+
 std::ostream & operator<<(std::ostream & os, Autobot& autobot)
 {
     os << "Level: " << autobot.getLevel() << "; " << "Strength: " << autobot.getStrength() << "; " << "Range: " << autobot.getRange() << "; " << "Fuel: " << autobot.getFuel() << "; " << "Ammo: " << autobot.getAmmo() << "; " << "Gun: " << autobot.getGun_power() << " " << autobot.getGun_strength() << "; " << "Level of kidness: " << autobot.getLevel_of_kidness() << "; " << "Happiness level: " << autobot.getHappiness_level() << "; " << "Level of greatness: " << autobot.getLevel_of_greatness();

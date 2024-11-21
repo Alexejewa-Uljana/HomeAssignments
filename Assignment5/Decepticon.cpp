@@ -55,6 +55,21 @@ bool Decepticon::act_of_kidness()
     return true;
 }
 
+void Decepticon::transform()
+{
+    std::cout << "Class: Decepticon" << std::endl << "Method: transform" << std::endl << std::endl;
+}
+
+void Decepticon::ulta()
+{
+    std::cout << "Class: Decepticon" << std::endl << "Method: ulta" << std::endl << std::endl;
+}
+
+void Decepticon::openFire()
+{
+    std::cout << "Class: Decepticon" << std::endl << "Method: openFire" << std::endl << std::endl;
+}
+
 std::ostream & operator<<(std::ostream & os, Decepticon& decepticon)
 {
     os << "Level: " << decepticon.getLevel() << "; " << "Strength: " << decepticon.getStrength() << "; " << "Range: " << decepticon.getRange() << "; " << "Fuel: " << decepticon.getFuel() << "; " << "Ammo: " << decepticon.getAmmo() << "; " << "Gun: " << decepticon.getGun_power() << " " << decepticon.getGun_strength() << "; " << "Level of evil: " << decepticon.getLevel_of_evil() << "; " << "Level of deception: " << decepticon.getLevel_of_deception();
