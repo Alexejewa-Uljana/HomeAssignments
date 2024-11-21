@@ -32,12 +32,12 @@ public:
     bool turn(Degree degree);
     bool fire();
     bool ultimate();
-    virtual void transform();
-    virtual void ulta();
-    virtual void openFire();
     friend std::ostream & operator<<(std::ostream &os, Transformer& transformer);
     bool operator<(Transformer& other);
     bool operator>(Transformer& other);
+    virtual void transform();
+    virtual void ulta();
+    virtual void openFire();
 private:
     uint _level;
     uint _strength;
