@@ -8,6 +8,9 @@ public:
     {
         return num > 0;
     }
+    int c_1_1() {};
+    float c_1_2() {};
+    void c_1_3() {};
 };
 
 #endif
