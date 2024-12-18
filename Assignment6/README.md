@@ -6,7 +6,7 @@
 st129990@student.spbu.ru
 ## Description
 
-Home assignment5 contains class TemplateClass(with realization to types int and double), classes Class1, Class2, Class3 with method bar for testing class TemplateClass.
+Home assignment6 contains class TemplateClass(with realization to types int and double), classes Class1, Class2, Class3 with method bar for testing class TemplateClass.
 
 ## Build
 
