@@ -5,14 +5,21 @@
 #include <iostream>
 #include <vector>
 
-class Class2 {
+class Class2
+{
 public:
     bool bar(int sum, std::vector <float>& vec)
     {
         return !vec.empty();
     }
-    int c_2_1() {};
-    float c_2_2() {};
+    int c_2_1()
+    {
+        return 2;
+    }
+    float c_2_2()
+    {
+        return 2.0;
+    }
     void c_2_3() {};
 };
 

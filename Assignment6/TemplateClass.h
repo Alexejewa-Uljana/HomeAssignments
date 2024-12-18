@@ -5,7 +5,8 @@
 #include <vector>
 
 template <typename T>
-class TemplateClass {
+class TemplateClass
+{
 public:
     TemplateClass(T* obj, int num, const std::vector<float>& vec)
         : obj_(obj), num_(num), vec_(vec) {}
@@ -22,7 +23,8 @@ private:
 };
 
 template <>
-class TemplateClass<int> {
+class TemplateClass<int>
+{
 public:
     TemplateClass(int*, int, const std::vector<float>&) {}
 
@@ -33,7 +35,8 @@ public:
 };
 
 template <>
-class TemplateClass<double> {
+class TemplateClass<double>
+{
 public:
     TemplateClass(double*, int, const std::vector<float>&) {}
 
