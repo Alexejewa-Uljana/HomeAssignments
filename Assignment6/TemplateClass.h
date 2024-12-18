@@ -46,4 +46,4 @@ public:
     }
 };
 
-#endif // TEMPLATECLASS_H
+#endif
