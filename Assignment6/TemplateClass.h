@@ -1,3 +1,4 @@
+//Алексеева Ульяна st129990@student.spbu.ru
 #ifndef TEMPLATECLASS_H
 #define TEMPLATECLASS_H
 
@@ -20,7 +21,6 @@ private:
     std::vector<float> vec_;
 };
 
-// Частичная специализация для int
 template <>
 class TemplateClass<int> {
 public:

@@ -1,3 +1,4 @@
+//Алексеева Ульяна st129990@student.spbu.ru
 #ifndef CLASS3_H
 #define CLASS3_H
 
